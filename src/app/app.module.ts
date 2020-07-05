@@ -4,14 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { Routes } from './routetable';
-import { NotfoundComponent } from './public/notfound/notfound.component';
+import { PageNotfoundComponent } from './public/pagenotfound/pagenotfound.component';
 import { HomeModule } from './public/home/home.module';
 import { MenuComponent } from './public/menu/menu.component';
+import { HeaderComponent } from './public/header/header.component';
+import { FooterComponent } from './public/footer/footer.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NotfoundComponent,
+    PageNotfoundComponent,
+    HeaderComponent,
+    FooterComponent,
     MenuComponent
   ],
   imports: [

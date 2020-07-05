@@ -1,0 +1,78 @@
+<!-- Header Section of the Website -->
+<header class="site-header">
+    <div class="header-top light-bg">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <ul class="left-content-details d-none d-sm-block">
+                    <li><img src="assets/images/icon-date.png"
+                            alt="Date"><span>{{CurrentDate | date:'EEEE, MMM d, yyyy'}}</span>
+                    </li>
+                    <li><img src="assets/images/icon-call.png" alt="">
+                        <a href='tel:{{OfficePhone}}' title="" class="color-secondary">{{OfficePhone}}</a>-<a
+                            href='tel:{{Cell}}' title="" class="color-secondary">{{Cell}}</a></li>
+                </ul> <!-- Left Side Content -->
+
+                <div class="navbar-brand d-flex justify-content-start justify-content-sm-center">
+                    <a class="brand" href="#"><img src="assets/images/logo.png" alt=""></a>
+                </div><!-- Site Brand -->
+
+                <ul class="right-items d-flex justify-content-end">
+                    <li class="search-wrapper">
+                        <div class="search-toggler font-20"><i class="fa fa-search" aria-hidden="true"></i></div>
+                        <form class="search-form">
+                            <input class="form-control" type="text" placeholder="Search Keyword Here">
+                            <button class="cust_btn cust_btn-primary cust_btn-sm" type="submit"><i class="fa fa-search"
+                                    aria-hidden="true"></i></button>
+                        </form>
+                    </li> <!-- Search  -->
+
+                    <li>
+                        <a routerLink="/user/login" title="" class="color-secondary font-20"><i class="fa fa-user"
+                                aria-hidden="true"></i></a>
+                    </li><!-- User Login -->
+
+                    <li>
+                        <div class="cart-notifiction font-20">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span class="notify-counter">1</span>
+                        </div>
+
+                        <div class="cart-quick-shop-dropdown d-none">
+                            <div class="cart-quick-list-wrapper">
+                                <div class="product-discard">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="product-image"></div>
+
+                                <div class="product-desc">
+                                    <h6></h6>
+                                    <span></span>
+                                    <button type=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li><!-- cart item -->
+
+                    <li class="d-lg-none">
+                        <div class="navbar-toggler font-20"><i class="fa fa-align-right" aria-hidden="true"></i></div>
+                    </li>
+                </ul><!--  Right Side Content -->
+            </div>
+        </div>
+    </div>
+    <div class="header-nav">
+        <nav class="right-navbar">
+            <div class="navbar-wrapper d-md-flex justify-content-md-center">
+                <app-menu></app-menu>
+                <ul class="left-content-details d-sm-none">
+                    <li><img src="assets/images/icon-date.png" alt="Date"><span>{{CurrentDate}}</span></li>
+                    <li><img src="assets/images/icon-call.png" alt=""><a href="tel:{{OfficePhone}}" title=""
+                            class="color-secondary">{{OfficePhone}}</a>-<a href="tel:{{Cell}}" title=""
+                            class="color-secondary">{{Cell}}</a></li>
+                </ul> <!-- Left Side Content -->
+            </div>
+            <div class="overlay"></div>
+        </nav>
+    </div>
+</header>

@@ -4,7 +4,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { RouterModule } from '@angular/router';
-import { UserRoute } from './userroute';
+import { UserRoutes } from './userroutes';
 
 
 
@@ -12,7 +12,7 @@ import { UserRoute } from './userroute';
   declarations: [RegistrationComponent, ForgotpasswordComponent, ChangepasswordComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(UserRoute)
+    RouterModule.forChild(UserRoutes)
   ]
 })
 export class UserModule { }
