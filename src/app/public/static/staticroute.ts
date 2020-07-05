@@ -4,6 +4,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { TermsconditionsComponent } from './termsconditions/termsconditions.component';
 
+/* Routing to load Static Pages with Lazy Loading */
 export const StaticRoutes: Route[] = [
     { path: 'services', component: ServicesComponent },
     { path: 'contactus', component: ContactusComponent },

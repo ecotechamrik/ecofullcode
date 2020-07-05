@@ -16,4 +16,6 @@ import { StaticRoutes } from './staticroute';
     RouterModule.forChild(StaticRoutes)
   ]
 })
+
+/* Static Module to load Static (Informational) Pages with Lazy Loading */
 export class StaticModule { }

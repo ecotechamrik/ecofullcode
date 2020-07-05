@@ -1,194 +1,46 @@
-<!-- Main Body -->
-  <!-- Home Page Slider -->
-  <app-doorslider></app-doorslider>
+<!-- Main Body [Started here] -->
 
-  <section class="our-product-section">
-    <div class="container">
-      <div class="border-heading text-center">
-        <div class="widget" style="margin:0;">
-          <!-- CHANGE THIS TO CSS -- AMRIK -->
-          <span class="heading-label color-gray font-14">
-            Quality Residential and Commercial Doors for Seattle
-            <div class="line"></div>
-          </span>
-          <div class="widget-inner">
-            <h2 class="font-52">Welcome To Doors Seattle</h2>
-            <p>What we are really good at however is service. Our professionally trained designers are experts in
-              doors and thier use in residential applications. The team can walk you through the selection process,
-              the opening requirments, the finishing, installation and use of each of our products. Our primary goal
-              is 100 percent accuracy at the job site. Our people are dedicated to making that happen for you.</p>
-            <a href="#" title="" class="cust_btn cust_btn-primary cust_btn-lg">Read More</a>
-          </div>
-        </div>
-      </div> <!-- Border Heading -->
-    </div>
-  </section><!-- Welcome to Doors Seattle Section --- CREATED FOR BLANK SPACE -->
+<!-- Home Page Slider -->
+<app-_homebanner></app-_homebanner>
 
-  <section class="product-section">
-    <!-- Speciality Doors Section -->
-    <div class="container">
-      <h2 class="border-heading text-center font-52">Specialty Doors</h2>
+<!-- Website Welcome Intro Section -->
+<app-_websiteintro></app-_websiteintro>
+<!-- Website Welcome Intro Section -->
 
-      <div>
-        <!-- Interior Traditional Paint Grade Doors -->
-        <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#all" role="tab">Interior Traditional Paint Grade
-              Doors</a>
-          </li>
-        </ul><!-- Tab panes -->
+<section class="product-section">
+  <!-- Speciality Doors Section -->
+  <div class="container">
+    <h2 class="border-heading text-center font-52">Specialty Doors</h2>
 
-        <!-- Door Category - TAB CONTENT -->
-        <app-doorcategory></app-doorcategory>
+    <!-- Int 1. Door Slider Tab Content for Interior Traditional Paint Grade Doors TAB -->
+    <app-_doorslider [tabHeading]="tabHeadingIntPaintGrade"></app-_doorslider>
 
-      </div><!-- Tab Content - Interior Traditional Paint Grade Doors -->
+    <!-- Int 2. Door Slider Tab Content for Interior Traditional Stain Grade Doors TAB -->
+    <app-_doorslider [tabHeading]="tabHeadingIntStainGrade"></app-_doorslider>
 
-      <section class="section-seprator" style="margin:4rem 0"></section>
-      <!-- CREATED FOR BLANK SPACE -->
+    <!-- Int 3. Door Slider Tab Content for Interior Contemporary Doors TAB -->
+    <app-_doorslider [tabHeading]="tabHeadingIntContemp"></app-_doorslider>
 
-      <div>
-        <!-- Interior Traditional Stain Grade Doors -->
-        <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#all" role="tab">Interior Traditional Stain Grade
-              Doors</a>
-          </li>
-        </ul><!-- Tab panes -->
+    <!-- Ext 1. Door Slider Tab Content for Exterior Traditional Paint Grade Doors TAB -->
+    <app-_doorslider [tabHeading]="tabHeadingExtPaintGrade"></app-_doorslider>
 
-        <!-- Door Category - TAB CONTENT -->
-        <app-doorcategory></app-doorcategory>
+    <!-- Ext 2. Door Slider Tab Content for Exterior Traditional Stain Grade Doors TAB -->
+    <app-_doorslider [tabHeading]="tabHeadingExtStainGrade"></app-_doorslider>
 
-      </div><!-- Tab Content - Interior Traditional Stain Grade Doors-->
+    <!-- Ext 3. Door Slider Tab Content for Exterior Contemporary Doors TAB -->
+    <app-_doorslider [tabHeading]="tabHeadingExtContemp"></app-_doorslider>
 
-      <section class="section-seprator" style="margin:4rem 0"></section>
-      <!-- CREATED FOR BLANK SPACE -->
+    <!-- Ext 4. Door Slider Tab Content for Exterior French Doors TAB -->
+    <app-_doorslider [tabHeading]="tabHeadingExtFrench"></app-_doorslider>
 
-      <div>
-        <!-- Interior Contemporary Doors -->
-        <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#all" role="tab">Interior Contemporary Doors</a>
-          </li>
-        </ul><!-- Tab panes -->
+    <!-- Oth 1. Door Slider Tab Content for Hardware TAB -->
+    <app-_doorslider [tabHeading]="tabHeadingHardware"></app-_doorslider>
 
-        <!-- Door Category - TAB CONTENT -->
-        <app-doorcategory></app-doorcategory>
+    <!-- Oth 2. Door Slider Tab Content for Installation Services TAB -->
+    <app-_doorslider [tabHeading]="tabHeadingInstallService"></app-_doorslider>
 
-      </div><!-- Tab Content - Interior Contemporary Doors -->
+    <!-- Oth 3. Door Slider Tab Content for Finishing TAB -->
+    <app-_doorslider [tabHeading]="tabHeadingFinishing"></app-_doorslider>
 
-      <section class="section-seprator" style="margin:4rem 0"></section>
-      <!-- CREATED FOR BLANK SPACE -->
-
-      <div>
-        <!-- Exterior Traditional Paint Grade Doors -->
-        <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#all" role="tab">Exterior Traditional Paint Grade
-              Doors</a>
-          </li>
-        </ul><!-- Tab panes -->
-
-        <!-- Door Category - TAB CONTENT -->
-        <app-doorcategory></app-doorcategory>
-        
-      </div><!-- Tab Content - Exterior Traditional Paint Grade Doors -->
-
-      <section class="section-seprator" style="margin:4rem 0"></section>
-      <!-- CREATED FOR BLANK SPACE -->
-
-      <div>
-        <!-- Exterior Traditional Stain Grade Doors -->
-        <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#all" role="tab">Exterior Traditional Stain Grade
-              Doors</a>
-          </li>
-        </ul><!-- Tab panes -->
-
-        <!-- Door Category - TAB CONTENT -->
-        <app-doorcategory></app-doorcategory>
-        
-      </div><!-- Tab Content - Exterior Traditional Stain Grade Doors-->
-
-      <section class="section-seprator" style="margin:4rem 0"></section>
-      <!-- CREATED FOR BLANK SPACE -->
-
-      <div>
-        <!-- Exterior Contemporary Doors -->
-        <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#all" role="tab">Exterior Contemporary Doors</a>
-          </li>
-        </ul><!-- Tab panes -->
-
-        <!-- Door Category - TAB CONTENT -->
-        <app-doorcategory></app-doorcategory>
-
-      </div><!-- Tab Content - Contemporary Contemporary Doors -->
-
-      <section class="section-seprator" style="margin:4rem 0"></section>
-      <!-- CREATED FOR BLANK SPACE -->
-
-      <div>
-        <!-- Exterior French DOors -->
-        <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#all" role="tab">Exterior French Doors</a>
-          </li>
-        </ul><!-- Tab panes -->
-
-        <!-- Door Category - TAB CONTENT -->
-        <app-doorcategory></app-doorcategory>
-        
-      </div><!-- Tab Content - Exterior French Doors -->
-
-      <section class="section-seprator" style="margin:4rem 0"></section>
-      <!-- CREATED FOR BLANK SPACE -->
-
-      <div>
-        <!-- Hardware -->
-        <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#all" role="tab">Hardware</a>
-          </li>
-        </ul><!-- Tab panes -->
-
-        <!-- Door Category - TAB CONTENT -->
-        <app-doorcategory></app-doorcategory>
-        
-      </div><!-- Tab Content - Hardware -->
-
-      <section class="section-seprator" style="margin:4rem 0"></section>
-      <!-- CREATED FOR BLANK SPACE -->
-
-      <div>
-        <!-- Insatllation Services -->
-        <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#all" role="tab">Installation Services</a>
-          </li>
-        </ul><!-- Tab panes -->
-
-        <!-- Door Category - TAB CONTENT -->
-        <app-doorcategory></app-doorcategory>
-
-      </div><!-- Tab Content - Installation Services -->
-
-      <section class="section-seprator" style="margin:4rem 0"></section>
-      <!-- CREATED FOR BLANK SPACE -->
-
-      <div>
-        <!-- Finishing -->
-        <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#all" role="tab">Finishing</a>
-          </li>
-        </ul><!-- Tab panes -->
-
-        <!-- Door Category - TAB CONTENT -->
-        <app-doorcategory></app-doorcategory>
-
-      </div><!-- Tab Content - Finishing -->
-
-    </div>
-  </section> <!-- Specialty Doors -->
+  </div>
+</section><!-- Main Body [Ended here] -->

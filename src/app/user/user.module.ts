@@ -15,4 +15,6 @@ import { UserRoutes } from './userroutes';
     RouterModule.forChild(UserRoutes)
   ]
 })
+
+/* User Module to load components for User related actions, e.g., Login, Registration with Lazy Loading */
 export class UserModule { }
