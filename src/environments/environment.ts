@@ -9,7 +9,8 @@ export const environment = {
   Fax: "604.677.1146",
   ContactEmail: "info@doorex.com",
   WebsiteName: "Door Seattle",
-  DevelopedBy: "Department of MIS, Eco Tech Door"
+  DevelopedBy: "Department of MIS, Eco Tech Door",
+  CompanyName: "Eco Tech Doors"
 };
 
 /* Setting Different Websites Values depending on the Website Domain to load content of the selected website */

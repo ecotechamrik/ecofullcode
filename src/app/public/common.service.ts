@@ -15,8 +15,6 @@ export class CommonService {
   ContactEmail = environment.ContactEmail;
   WebsiteName = environment.WebsiteName;
   DevelopedBy = environment.DevelopedBy;
-
-
-  // For Later Use to fetch Website Details based on Website ID or Enum Type
-  //WEBSITES[WEBSITES.DoorSeattle];
+  CompanyName = environment.CompanyName;
+  WebsiteID = WEBSITES[WEBSITES.DoorSeattle]; // To fetch Website Details based on Website ID or Enum Type
 }
