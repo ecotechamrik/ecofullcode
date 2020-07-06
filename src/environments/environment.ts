@@ -17,5 +17,6 @@ export const environment = {
 export enum WEBSITES{
   DoorSeattle = 1,
   DoorsSeattle = 2,
-  EcoTechDoor = 3
+  EcoTechDoor = 3,
+  DoorsBC = 4
 }
