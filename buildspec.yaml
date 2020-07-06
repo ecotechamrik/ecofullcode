@@ -19,9 +19,9 @@ phases:
     commands:
       # - echo testing...
       # - echo building...
-      - ng build --prod
+      - ng build
 artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: dist/MultiWebsites
+  base-directory: public
