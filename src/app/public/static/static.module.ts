@@ -6,11 +6,13 @@ import { TermsconditionsComponent } from './termsconditions/termsconditions.comp
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { RouterModule } from '@angular/router';
 import { StaticRoutes } from './staticroute';
+import { DisclaimerComponent } from './disclaimer/disclaimer.component';
+import { CopyrightComponent } from './copyright/copyright.component';
 
 
 
 @NgModule({
-  declarations: [ServicesComponent, ContactusComponent, TermsconditionsComponent, PrivacypolicyComponent],
+  declarations: [ServicesComponent, ContactusComponent, TermsconditionsComponent, PrivacypolicyComponent, DisclaimerComponent, CopyrightComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(StaticRoutes)

@@ -10,13 +10,24 @@ import { CommonService } from '../common.service';
 export class _FooterComponent implements OnInit {
 
   // Setting Local Variables
+  Cell: string;
+  OfficePhone: string;
   CurrentYear = new Date();
-  CurrentWebsite: string;
+  WebsiteName: string;
+  DevelopedBy: string;
+  ContactEmail: string;
+
+  // Injective Common Service into Constructor to Use Global Variables.
   constructor(private commonService: CommonService) { }
 
-  // Settin Variables Values from the Common Service
+  // Setting Variables Values from the Common Service
   ngOnInit(): void {
-    this.CurrentWebsite = this.commonService.CurrentWebsite;
+    this.Cell = this.commonService.Cell;
+    this.OfficePhone = this.commonService.OfficePhone; 
+    this.WebsiteName = this.commonService.WebsiteName;
+    this.DevelopedBy = this.commonService.DevelopedBy;
+    this.ContactEmail = this.commonService.ContactEmail;
+
   }
 
 }

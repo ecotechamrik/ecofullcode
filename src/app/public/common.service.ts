@@ -13,7 +13,7 @@ export class CommonService {
   OfficePhone = environment.OfficePhone;
   Fax = environment.Fax;
   ContactEmail = environment.ContactEmail;
-  CurrentWebsite = environment.WebsiteName;
+  WebsiteName = environment.WebsiteName;
   DevelopedBy = environment.DevelopedBy;
 
 

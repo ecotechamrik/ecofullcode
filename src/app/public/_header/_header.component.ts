@@ -7,18 +7,21 @@ import { CommonService } from '../common.service';
   styleUrls: ['./_header.component.css']
 })
 export class _HeaderComponent implements OnInit {
+  
+  // Setting Local Variables
   Cell: string;
   OfficePhone: string;
   CurrentDate = new Date();
 
-  /* Using Cell No. and Office Phone no. from a Common Service */
+  // Injective Common Service into Constructor to Use Global Variables.
   constructor(private commonService:CommonService) { 
-    this.Cell = commonService.Cell;
-    this.OfficePhone = commonService.OfficePhone;
+    
   }
 
+  /* Using Cell No. and Office Phone no. from a Common Service */
   ngOnInit(): void {
-    
+    this.Cell = this.commonService.Cell;
+    this.OfficePhone = this.commonService.OfficePhone; 
   }
 
 }
