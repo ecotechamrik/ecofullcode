@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonService } from '../../common.service';
+import { CommonService } from '../../service/common.service';
 import { environment } from 'src/environments/environment';
 
 @Component({
