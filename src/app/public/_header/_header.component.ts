@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WEBSITES, environment } from '../../../environments/environment'
+import { CommonService } from '../common.service';
 
 @Component({
   selector: 'app-_header',
@@ -7,12 +7,15 @@ import { WEBSITES, environment } from '../../../environments/environment'
   styleUrls: ['./_header.component.css']
 })
 export class _HeaderComponent implements OnInit {
-  // CurrentWebsite = WEBSITES[WEBSITES.DoorSeattle]; -- REQUIRED LATER
-  Cell = environment.Cell;
-  OfficePhone = environment.OfficePhone;
+  Cell: string;
+  OfficePhone: string;
   CurrentDate = new Date();
 
-  constructor() { }
+  /* Using Cell No. and Office Phone no. from a Common Service */
+  constructor(private commonService:CommonService) { 
+    this.Cell = commonService.Cell;
+    this.OfficePhone = commonService.OfficePhone;
+  }
 
   ngOnInit(): void {
     

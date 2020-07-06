@@ -5,20 +5,16 @@
 export const environment = {
   production: false,
   Cell:"604.677.1144",
-  OfficePhone:"1.888.238.2687"
+  OfficePhone:"1.888.238.2687",
+  Fax: "604.677.1146",
+  ContactEmail: "info@doorex.com",
+  WebsiteName: "Door Seattle",
+  DevelopedBy: "Department of MIS, EcoTechDoor"
 };
 
+/* Setting Different Websites Values depending on the Website Domain to load content of the selected website */
 export enum WEBSITES{
   DoorSeattle = 1,
   DoorsSeattle = 2,
   EcoTechDoor = 3
 }
-
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.

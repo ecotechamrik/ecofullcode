@@ -55,7 +55,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-8">
-                    <p>Copyright ©2010 by Doors Seattle. All rights reserved. Website production by Department of MIS,
+                    <p>Copyright © {{CurrentYear | date:'yyyy'}} by {{CurrentWebsite}}. All rights reserved. Website production by Department of MIS,
                         Door
                         Express.</p>
                 </div>
@@ -63,8 +63,8 @@
                 <div
                     class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 d-md-flex align-items-md-center justify-content-md-end">
                     <ul>
-                        <li><a href="#" title="">Copyright</a></li>
-                        <li><a href="#" title="">Disclaimer</a></li>
+                        <li><a routerLink="/static/copyright" title="">Copyright</a></li>
+                        <li><a routerLink="/static/disclaimer" title="">Disclaimer</a></li>
                         <li><a routerLink="/static/privacypolicy" title="">Privacy</a></li>
                     </ul>
                 </div>

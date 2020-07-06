@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../../common.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-contactus',
@@ -6,8 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contactus.component.css']
 })
 export class ContactusComponent implements OnInit {
+  Cell: string;
+  OfficePhone: string;
+  Fax: string
+  ContactEmail: string;
 
-  constructor() { }
+  /* Using Cell No. and Office Phone no. from a Common Service */
+  constructor(private commonService: CommonService) {
+    this.Cell = commonService.Cell;
+    this.OfficePhone = commonService.OfficePhone;
+    this.Fax = environment.Fax;
+    this.ContactEmail = environment.ContactEmail;
+  }
 
   ngOnInit(): void {
   }
