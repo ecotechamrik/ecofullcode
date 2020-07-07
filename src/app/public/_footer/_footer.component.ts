@@ -13,7 +13,6 @@ export class _FooterComponent implements OnInit {
   Cell: string;
   OfficePhone: string;
   CurrentYear = new Date();
-  CurrentYear2 = new Date();
   WebsiteName: string;
   DevelopedBy: string;
   ContactEmail: string;
