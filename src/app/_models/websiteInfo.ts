@@ -2,7 +2,7 @@ export class WebsiteInfo
 {
     // Class Properties
     WebsiteID: number;
-    Name: string;
+    WebsiteName: string;
     URL: string;
     CpanelUser: string;
     CpanelPassword: string;
@@ -17,12 +17,15 @@ export class WebsiteInfo
     HostingProviderName: string;
     HostingProviderDesc: string;
     HostingProviderContactNo: string;
-    BannerWebsiteTitle: string;
-    BannerWebsiteTagLine: string;
+    WebsiteBannerTitle: string;
+    WebsiteBannerTagLine: string;
     CompanyName: string;
     CompanyDesc: string;
     ContactEmailID: string;
     Cell: string;
-    Phone: string;
+    OfficePhone: string;
     Fax: string;
+    DevelopedBy: string;
+    Address: string;
+    AddressMap: string;
 }

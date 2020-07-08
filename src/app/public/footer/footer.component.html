@@ -15,7 +15,7 @@
                         </div>
 
                         <p>Tell us the reason for your query and we’ll give you an answer.</p>
-                        <a href="mailto:{{ContactEmail}}">{{ContactEmail}}</a>
+                        <a href="mailto:{{this.commonService.WebsiteInfo.ContactEmailID}}">{{this.commonService.WebsiteInfo.ContactEmailID}}</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -28,8 +28,8 @@
                         </div>
 
                         <p>If you have any questions, just call us and our manager will help you.</p>
-                        <a href="tel:{{OfficePhone}}">Toll Free: {{OfficePhone}}</a>
-                        <a href="tel:{{Cell}}">Tel: {{Cell}}</a>
+                        <a href="tel:{{this.commonService.WebsiteInfo.OfficePhone}}">Toll Free: {{this.commonService.WebsiteInfo.OfficePhone}}</a>
+                        <a href="tel:{{this.commonService.WebsiteInfo.Cell}}">Tel: {{this.commonService.WebsiteInfo.Cell}}</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -56,8 +56,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-8">
-                    <p>Copyright © {{CurrentYear | date:'yyyy'}} - {{WebsiteName}}. All rights reserved. Website
-                        developed by {{DevelopedBy}}</p>
+                    <p>Copyright © {{CurrentYear | date:'yyyy'}} - {{this.commonService.WebsiteInfo.WebsiteName}}. All rights reserved. Website
+                        developed by {{this.commonService.WebsiteInfo.DevelopedBy}}</p>
                 </div>
 
                 <div

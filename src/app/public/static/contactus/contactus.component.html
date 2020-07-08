@@ -11,22 +11,22 @@
             <label for="">Daily deliveries through USA & Canada.</label>
         </div>
         <div class="form-group">
-            <label for="">1927 Boblett Street, Blaine WA, 98230</label>
+            <label for="">{{this.commonService.WebsiteInfo.Address}}</label>
         </div>
         <div class="form-group">
-            <label for="">Toll Free: </label>&#160;<a href='tel:{{OfficePhone}}' title="" class="color-secondary">{{OfficePhone}}</a>
+            <label for="">Toll Free: </label>&#160;<a href='tel:{{this.commonService.WebsiteInfo.OfficePhone}}' title="" class="color-secondary">{{this.commonService.WebsiteInfo.OfficePhone}}</a>
         </div>
         <div class="form-group">
-            <label for="">Tel: </label>&#160;<a href='tel:{{Cell}}' title="" class="color-secondary">{{Cell}}</a>
+            <label for="">Tel: </label>&#160;<a href='tel:{{this.commonService.WebsiteInfo.Cell}}' title="" class="color-secondary">{{this.commonService.WebsiteInfo.Cell}}</a>
         </div>
         <div class="form-group">
-            <label for="">Fax: </label>&#160;<a href='tel:{{Fax}}' title="" class="color-secondary">{{Fax}}</a>
+            <label for="">Fax: </label>&#160;<a href='tel:{{this.commonService.WebsiteInfo.Fax}}' title="" class="color-secondary">{{this.commonService.WebsiteInfo.Fax}}</a>
         </div>
         <div class="form-group">
-            <label for="">Email: </label>&#160;<a href='mailto:{{ContactEmail}}' title="" class="color-secondary">{{ContactEmail}}</a>
+            <label for="">Email: </label>&#160;<a href='mailto:{{this.commonService.WebsiteInfo.ContactEmailID}}' title="" class="color-secondary">{{this.commonService.WebsiteInfo.ContactEmailID}}</a>
         </div>
         <div class="form-group p-3">
-            <iframe class="border border-secondary rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2618.0839154344626!2d-122.72870768432105!3d48.98996047930062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485c6b02ed90c57%3A0xe795e1458885dc47!2s1927+Boblett+St%2C+Blaine%2C+WA+98230%2C+USA!5e0!3m2!1sen!2sca!4v1521407241440" style="border:0" allowfullscreen="true" width="60%" height="300" frameborder="0"></iframe>
+            <iframe #iframe class="border border-secondary rounded-lg" style="border:0" allowfullscreen="true" width="60%" height="300" frameborder="0"></iframe>
         </div>
     </div>
 </div><!-- Contact Us Page Content [Ended here] -->

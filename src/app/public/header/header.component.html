@@ -8,12 +8,12 @@
                             alt="Date"><span>{{CurrentDate | date:'EEEE, MMM d, yyyy'}}</span>
                     </li>
                     <li><img src="assets/images/icon-call.png" alt="">
-                        <a href='tel:{{OfficePhone}}' title="" class="color-secondary">{{OfficePhone}}</a>-<a
-                            href='tel:{{Cell}}' title="" class="color-secondary">{{Cell}}</a></li>
+                        <a href='tel:{{this.commonService.WebsiteInfo.OfficePhone}}' title="" class="color-secondary">{{this.commonService.WebsiteInfo.OfficePhone}}</a>-<a
+                            href='tel:{{this.commonService.WebsiteInfo.Cell}}' title="" class="color-secondary">{{this.commonService.WebsiteInfo.Cell}}</a></li>
                 </ul> <!-- Left Side Content -->
 
                 <div class="navbar-brand d-flex justify-content-start justify-content-sm-center">
-                    <a class="brand" routerLink=""><img src="assets/images/{{WebsiteID}}.png" alt=""></a>
+                    <a class="brand" routerLink=""><img src="assets/images/{{this.commonService.CurrentWebsite}}.png" alt=""></a>
                 </div><!-- Site Brand -->
 
                 <ul class="right-items d-flex justify-content-end">
@@ -64,12 +64,12 @@
     <div class="header-nav">
         <nav class="right-navbar">
             <div class="navbar-wrapper d-md-flex justify-content-md-center">
-                <app-_menu></app-_menu>
+                <app-menu></app-menu>
                 <ul class="left-content-details d-sm-none">
                     <li><img src="assets/images/icon-date.png" alt="Date"><span>{{CurrentDate}}</span></li>
-                    <li><img src="assets/images/icon-call.png" alt=""><a href="tel:{{OfficePhone}}" title=""
-                            class="color-secondary">{{OfficePhone}}</a>-<a href="tel:{{Cell}}" title=""
-                            class="color-secondary">{{Cell}}</a></li>
+                    <li><img src="assets/images/icon-call.png" alt=""><a href="tel:{{this.commonService.WebsiteInfo.OfficePhone}}" title=""
+                            class="color-secondary">{{this.commonService.WebsiteInfo.OfficePhone}}</a>-<a href="tel:{{this.commonService.WebsiteInfo.Cell}}" title=""
+                            class="color-secondary">{{this.commonService.WebsiteInfo.Cell}}</a></li>
                 </ul> <!-- Left Side Content -->
             </div>
             <div class="overlay"></div>
