@@ -15,11 +15,15 @@ export class _HomebannerComponent implements OnInit {
 
   // Injective Common Service into Constructor to Use Global Variables.
   constructor(public commonService: CommonService, private homeService: HomeService) {
+
   }
 
   /* Using common data from a Common Service for each website based on Website ID */
   ngOnInit(): void {
-    this.GetWebsiteDetails();
+    if (this.commonService.WebsiteInfo == undefined) {
+      this.commonService.WebsiteInfo = new WebsiteInfo();
+      this.GetWebsiteDetails();
+    }
   }
 
   /* Get Website Details from Database based on Website ID */
@@ -35,8 +39,7 @@ export class _HomebannerComponent implements OnInit {
   }
 
   SaveWebsiteInfo(data: any) {
-    if(data!=undefined)
-    {
+    if (data != undefined) {
       this.commonService.WebsiteInfo = new WebsiteInfo();
       this.commonService.WebsiteInfo.CompanyName = data[0].companyName;
       this.commonService.WebsiteInfo.BannerWebsiteTitle = data[0].name;
