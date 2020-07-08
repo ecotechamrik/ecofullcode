@@ -10,7 +10,8 @@ export const environment = {
   ContactEmail: "info@doorex.com",
   WebsiteName: "Door Seattle",
   DevelopedBy: "Department of MIS, Eco Tech Doors",
-  CompanyName: "Eco Tech Doors"
+  CompanyName: "Eco Tech Doors",
+  WEBAPIURL: 'http://localhost:58326/api/'
 };
 
 /* Setting Different Websites Values depending on the Website Domain to load content of the selected website */

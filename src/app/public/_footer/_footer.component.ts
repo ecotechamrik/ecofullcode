@@ -16,6 +16,7 @@ export class _FooterComponent implements OnInit {
   WebsiteName: string;
   DevelopedBy: string;
   ContactEmail: string;
+  
 
   // Injective Common Service into Constructor to Use Global Variables.
   constructor(private commonService: CommonService) { }
@@ -27,6 +28,7 @@ export class _FooterComponent implements OnInit {
     this.WebsiteName = this.commonService.WebsiteName;
     this.DevelopedBy = this.commonService.DevelopedBy;
     this.ContactEmail = this.commonService.ContactEmail;
+    this.commonService.TestDesc = "NEW TEST";
 
   }
 

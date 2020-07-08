@@ -13,9 +13,11 @@ export class _HeaderComponent implements OnInit {
   OfficePhone: string;
   CurrentDate = new Date();
   WebsiteID:string;
+  CompanyName: string;
+  TestDesc:string;
   
   // Injective Common Service into Constructor to Use Global Variables.
-  constructor(private commonService:CommonService) { 
+  constructor(public commonService:CommonService) { 
     
   }
 
@@ -24,6 +26,7 @@ export class _HeaderComponent implements OnInit {
     this.Cell = this.commonService.Cell;
     this.OfficePhone = this.commonService.OfficePhone; 
     this.WebsiteID = this.commonService.WebsiteID;
+    this.TestDesc = this.commonService.TestDesc;
   }
 
 }
