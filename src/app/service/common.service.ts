@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { WEBSITES, environment } from '../../../environments/environment'
-import { WebsiteInfo } from '../home/models/WebsiteInfo';
+import { WEBSITES, environment } from '../../environments/environment'
+import { WebsiteInfo } from '../models/websiteInfo';
 
 @Injectable({
   providedIn: 'root'

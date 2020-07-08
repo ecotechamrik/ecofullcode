@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonService } from '../../service/common.service';
-import { HomeService } from '../../service/home.service';
+import { CommonService } from '../../../service/common.service';
+import { HomeService } from '../../../service/home.service';
 import { environment, WEBSITES } from 'src/environments/environment';
-import { WebsiteInfo } from '../models/WebsiteInfo';
-import { NgForm } from '@angular/forms';
-import { Observable } from 'rxjs';
+import { WebsiteInfo } from '../../../models/websiteInfo';
 
 @Component({
   selector: 'app-_homebanner',
@@ -15,7 +13,6 @@ export class _HomebannerComponent implements OnInit {
 
   // Injective Common Service into Constructor to Use Global Variables.
   constructor(public commonService: CommonService, private homeService: HomeService) {
-
   }
 
   /* Using common data from a Common Service for each website based on Website ID */

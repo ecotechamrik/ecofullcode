@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonService } from '../../service/common.service';
+import { CommonService } from '../../../service/common.service';
 
 @Component({
   selector: 'app-_websiteintro',
