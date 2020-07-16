@@ -20,6 +20,6 @@ export class HomeService {
 
   //Get Website Details from Database based on given Website ID
   getWebsiteDetailsByID(WebsiteID: number): Observable<WebsiteInfo> {
-    return this.httpClient.get<WebsiteInfo>(`${environment.WEBAPIURL}home/${WebsiteID}`);
+    return this.httpClient.get<WebsiteInfo>(`${environment.WEBAPIURL}website/${WebsiteID}`);
   }
 }

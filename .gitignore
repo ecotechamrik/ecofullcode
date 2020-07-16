@@ -3,7 +3,6 @@
 # compiled output
 /dist
 /ecotech
-../ecotech
 /tmp
 /out-tsc
 # Only exists if Bazel was run

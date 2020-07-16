@@ -1,8 +1,31 @@
 export class Product {
     ProductId: number;
-    ProductCode: string;
+    CategoryID: number;
+    SubCategoryID: number;    
     ProductName: string;
-    Price: number;
-    IsActive: boolean;
-    Color: string
+    ProductCode: string;    
+    ProductDesc: string;
+    PriorityNumber: string;
+    Notes: string;
+    GroupNumber: string;
+    BuildingCode: string;
+    LocationCode: string;
+    SupplierID: number;
+    SupplierModeCode: string;
+    LeadTime: string;
+    RetailBin: string;
+    WholeSaleBin: string;
+    IndexNumber: string;
+    PracticalMarkup: string;
+    PracticalCost: string;
+    RetailMarkup: string;
+    DiscRetail: string;
+    MarkupLive: string;
+    PriceDisc: string;
+    LivePrice: string;
+    Width: string;
+    CreatedDate: Date;
+    CreatedBy: Date;
+    IsActive: Date;
+    IPAddress: Date;
 }
